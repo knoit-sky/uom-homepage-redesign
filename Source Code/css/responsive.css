@@ -1,0 +1,464 @@
+/* Common styles for all devices (e.g., mobile-first styles) */
+
+/* Smartphone Styles (up to 768px) */
+@media (max-width: 768px) {
+
+    .desktop_content {
+        display: none;
+    }
+
+    .tablet_content {
+        display: none;
+    }
+
+    .mobile_content {
+        display: block;
+    }
+
+    .menu_items_container a:hover {
+        transition: 0.25s;
+        transform: translateX(5%);
+    }
+
+    .slide {
+        font-size: 0.75em;
+    }
+
+    .slide h2 {
+        font-size: 1.3em;
+    }
+
+    .slider_indicator {
+        width: 3vw;
+        height: 0.3vh;
+        margin: 0 3px;
+    }
+
+    .title {
+        font-size: 1.25em;
+    }
+
+    .subtitle {
+        font-size: 0.75em;
+    }
+
+    .course_tile,
+    .course_tile img {
+        width: 40vb;
+    }
+
+    .course_tile img {
+        height: 25vb;
+    }
+
+    .what_industry_says_card {
+        width: 40%;
+    }
+
+    .circle_avatar {
+        width: 15vb;
+        height: 15vb;
+    }
+
+    #header_image {
+        background:
+            linear-gradient(to bottom, rgba(255, 211, 9, 0.0) 30%, rgba(255, 137, 57, 0.75)) 100%,
+            url("../images/Institute-of-Technology-University-of-Moratuwa-ITUM-1.png");
+        background-size: cover;
+        background-position: 20% 100%;
+    }
+
+    header,
+    #header_image {
+        height: 100vh;
+    }
+
+    #menu,
+    #logo_with_name_container {
+        height: 12vh;
+    }
+
+    #menu_button {
+        display: flex;
+    }
+
+    #header_content h1 {
+        font-size: 2.5em;
+        margin-bottom: 1vh;
+    }
+
+    #header_content h2 {
+        font-size: 2.15em;
+        margin-bottom: 3%;
+    }
+
+    #free_of_charge {
+        font-size: 1ex;
+    }
+
+    #slider_container {
+        height: 40%;
+    }
+
+    #slider_container:hover {
+        transform: translateY(-5%);
+    }
+
+    #body {
+        margin-top: 20vh;
+        font-size: 0.8em;
+    }
+
+    #our_teams_section .subtitle {
+        line-height: 3vh;
+        width: 80vw;
+    }
+
+    #our_teams_section li {
+        width: 50%;
+        margin-bottom: 2%;
+    }
+
+    #courses_tile_container {
+        gap: 5%;
+        justify-content: center !important;
+    }
+
+    #courses_tile_container span {
+        font-size: 0.85em;
+    }
+
+    #our_sponsors_section img {
+        width: 7.5vb;
+        height: 7.5vb;
+    }
+
+    footer {
+        font-size: 0.7em;
+    }
+}
+
+/* Tablet Styles (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .desktop_content {
+        display: none;
+    }
+
+    .tablet_content {
+        display: block;
+    }
+
+    .mobile_content {
+        display: none;
+    }
+
+    .menu_items_container a:hover {
+        transition: 0.25s;
+        transform: translateX(5%);
+    }
+
+    .slide {
+        font-size: 1em;
+    }
+
+    .slide h2 {
+        font-size: 1.25em;
+    }
+
+    .slider_indicator {
+        width: 3vw;
+        height: 0.3vh;
+        margin: 0 3px;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .subtitle {
+        font-size: 0.8em;
+    }
+
+    .course_tile,
+    .course_tile img {
+        width: 32vb;
+    }
+
+    .course_tile img {
+        height: 20vb;
+    }
+
+    .what_industry_says_card {
+        width: 35%;
+    }
+
+    .circle_avatar {
+        width: 17.5vb;
+        height: 17.5vb;
+    }
+
+    #header_image {
+        background:
+            linear-gradient(to bottom, rgba(255, 211, 9, 0.0) 30%, rgba(255, 137, 57, 0.75)) 100%,
+            url("../images/Institute-of-Technology-University-of-Moratuwa-ITUM-1.png");
+        background-size: cover;
+        background-position: 10% 100%;
+    }
+
+    header,
+    #header_image {
+        height: 125vh;
+    }
+
+    #menu,
+    #logo_with_name_container {
+        height: 11vh;
+    }
+
+    #menu_button {
+        display: flex;
+    }
+
+    #header_content h1 {
+        font-size: 3.5em;
+        margin-bottom: 2vh;
+    }
+
+    #header_content h2 {
+        font-size: 3em;
+        margin-bottom: 3%;
+    }
+
+    #free_of_charge {
+        font-size: 1.25ex;
+    }
+
+    #slider_container {
+        height: 40%;
+    }
+
+    #slider_container:hover {
+        transform: translateY(-5%);
+    }
+
+    #body {
+        margin-top: 25vh;
+        font-size: 0.9em;
+    }
+
+    #our_teams_section .subtitle {
+        line-height: 4vh;
+        width: 70vw;
+    }
+
+    #our_teams_section li {
+        width: 40%;
+        margin-bottom: 1.5%;
+    }
+
+    #courses_tile_container {
+        gap: 4%;
+    }
+
+    #courses_tile_container span {
+        font-size: 0.6em;
+    }
+
+    #our_sponsors_section img {
+        width: 10vb;
+        height: 10vb;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+
+    #footer_inner,
+    #footer_center {
+        gap: 15px;
+    }
+
+    #footer_left{
+        width: 600px !important;
+    }
+}
+
+/* Desktop Styles (1025px and above) */
+@media (min-width: 1025px) {
+
+    .desktop_content {
+        display: block;
+    }
+
+    .tablet_content {
+        display: none;
+    }
+
+    .mobile_content {
+        display: none;
+    }
+
+    .menu_items_container {
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+        width: 90%;
+        justify-content: right;
+        gap: 2vw;
+    }
+
+    .menu_items_container li {
+        display: flex;
+        align-items: center;
+        font-size: 1.75ex;
+    }
+
+    .menu_items_container a {
+        position: relative;
+        width: 100%;
+    }
+
+    .menu_items_container a:hover {
+        opacity: 0.6;
+    }
+
+    .menu_item_link a:hover:after {
+        display: block;
+        position: absolute;
+        content: "";
+        width: 0.5ex;
+        height: 0.5ex;
+        border-radius: 2ex;
+        background-color: currentColor;
+        opacity: 1;
+        top: 100%;
+        left: 50%;
+        margin-top: 0.75ex;
+    }
+
+    .slide {
+        font-size: 1.25em;
+    }
+
+    .slider_indicator {
+        width: 2vw;
+        height: 0.3vh;
+        margin: 0 5px;
+    }
+
+    .title {
+        font-size: 1.75em;
+    }
+
+    .subtitle {
+        font-size: 0.85em;
+    }
+
+    .course_tile,
+    .course_tile img {
+        width: 54vb;
+    }
+
+    .course_tile img {
+        height: 32vb;
+    }
+
+    .what_industry_says_card {
+        width: 30%;
+    }
+
+    .circle_avatar {
+        width: 20vb;
+        height: 20vb;
+    }
+
+    footer a:hover,
+    .link:hover {
+        text-decoration: underline;
+        color: #a24507;
+    }
+
+    #header_image {
+        background:
+            linear-gradient(to bottom, rgba(255, 211, 9, 0.0) 30%, rgba(255, 137, 57, 0.75)) 100%,
+            url("../images/Institute-of-Technology-University-of-Moratuwa-ITUM-1.png");
+        background-size: cover;
+        background-position: 0% 100%;
+    }
+
+    header,
+    #header_image {
+        height: 150vh;
+    }
+
+    #menu,
+    #logo_with_name_container {
+        height: 11vh;
+    }
+
+    #menu_button,
+    #menu_button.open,
+    #menu_sheet {
+        display: none !important;
+    }
+
+    #header_content h1 {
+        font-size: 5em;
+        margin-bottom: 3vh;
+    }
+
+    #header_content h2 {
+        font-size: 3em;
+        margin-bottom: 0px;
+    }
+
+    #free_of_charge {
+        font-size: 1.5ex;
+    }
+
+    #slider_container {
+        height: 45%;
+    }
+
+    #slider_container:hover {
+        transform: translateY(-10%);
+    }
+
+    #body {
+        margin-top: 35vh;
+        font-size: 1em;
+    }
+
+    #our_teams_section .subtitle {
+        line-height: 5vh;
+        width: 60vw;
+    }
+
+    #our_teams_section li {
+        width: 30%;
+        margin-bottom: 1%;
+    }
+
+    #courses_tile_container {
+        gap: 3%;
+    }
+
+    #courses_tile_container span {
+        font-size: 0.9em;
+    }
+
+    #our_sponsors_section img {
+        width: 15vb;
+        height: 15vb;
+    }
+
+    #footer_inner,
+    #footer_center {
+        gap: 25px;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}

@@ -1,0 +1,703 @@
+body {
+    margin: 0px;
+    font-family: 'Merriweather', serif;
+    color: #652606;
+}
+
+header {
+    position: relative;
+    background:
+        linear-gradient(45deg, rgba(255, 211, 9, 0.7), rgba(255, 137, 57, 0.75));
+}
+
+table {
+    margin: 0px auto;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #00A300;
+    color: white;
+}
+
+th {
+    padding: 2% 3%;
+    text-align: left;
+}
+
+td {
+    padding: 2% 3%;
+    border-bottom: 1px solid rgba(10, 8, 7, 0.1);
+    transition: 0.3s ease;
+}
+
+tbody tr {
+    color: rgba(10, 8, 7, 0.8);
+}
+
+tbody tr:hover {
+    color: rgba(10, 8, 7, 1);
+    background-color: #F5FFF5;
+    transition: 0.3s ease;
+}
+
+th:first-child {
+    border-top-left-radius: 10px;
+}
+
+th:last-child {
+    border-top-right-radius: 10px;
+}
+
+footer {
+    color: #0a0807;
+}
+
+footer ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+footer li {
+    list-style: none;
+    margin-bottom: 5% !important;
+}
+
+.align_center_of_relative_container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu_items_container {
+    list-style: none;
+}
+
+.menu_items_container a,
+.menu_items_container a:visited {
+    text-decoration: none;
+    color: currentColor;
+    display: flex;
+}
+
+.bar {
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transition: 0.4s;
+    position: absolute;
+    border-radius: 8px;
+}
+
+.bar:nth-child(1) {
+    top: -24%;
+}
+
+.bar:nth-child(2) {
+    top: 0%;
+}
+
+.bar:nth-child(3) {
+    top: 25%;
+}
+
+.outline_button {
+    border: 0.25ex solid #652606;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+    color: #652606;
+    text-decoration: none;
+}
+
+.outline_button:hover,
+.outline_button:focus {
+    background-color: #652606 !important;
+    color: white !important;
+    opacity: 1 !important;
+}
+
+.fill_button,
+.fill_button:focus {
+    border: 0.25ex solid #652606;
+    background-color: #652606;
+    color: white;
+    text-decoration: none;
+}
+
+.fill_button:hover {
+    background-color: #a24507;
+    border: 0.25ex solid #a24507;
+}
+
+.outline_button,
+.fill_button {
+    padding: 1vh 1.75vw;
+    border-radius: 0.5ex;
+    cursor: pointer;
+    padding: 1vh 1.75vw;
+}
+
+.header_padding {
+    padding: 0.5% 5%;
+}
+
+.slide {
+    flex: 0 0 100%;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    box-sizing: border-box;
+    padding: 0px 15%;
+}
+
+.slide h2 {
+    margin-bottom: 5%;
+}
+
+.slide p {
+    opacity: 0.9;
+}
+
+.slide h2,
+.slide p {
+    color: #003800;
+}
+
+.slider_indicator_parent {
+    padding: 2.5vh 0.025vw;
+}
+
+.slider_indicator {
+    display: inline-block;
+    background-color: #003800;
+    opacity: 0.5;
+    padding: 0px;
+}
+
+.slider_indicator.active {
+    opacity: 1;
+}
+
+.title {
+    margin: 1% 0px;
+}
+
+.subtitle {
+    color: #0a0807;
+    margin-bottom: 5%;
+}
+
+.course_tile {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #003800;
+    box-shadow: 0 2px 4px rgb(0, 56, 0, 0.2);
+    transition: 0.4s ease-in-out;
+    margin-bottom: 5%;
+}
+
+.course_tile:hover {
+    box-shadow: 0 5px 10px rgb(0, 56, 0, 0.25);
+    transform: scale(1.1, 1.1);
+}
+
+.course_tile span {
+    padding: 5% 3%;
+    border: 1px solid rgb(0, 56, 0, 0.25);
+    height: 5vb;
+}
+
+.course_tile,
+.course_tile span {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.circle_avatar {
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 5% auto;
+    border: 2px solid #652606;
+}
+
+.circle_avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.what_industry_says_card {
+    text-align: center;
+    padding: 5% 0px;
+}
+
+footer a,
+footer a::after,
+.link,
+.link:visited {
+    color: currentColor;
+    text-decoration: none;
+}
+
+.footer_highlight {
+    color: #652606;
+    margin: 0px;
+    margin-top: 3vh !important;
+    font-weight: bold;
+}
+
+#menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    animation: slideDown 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+#menu.open {
+    box-shadow: none;
+}
+
+#logo {
+    height: 9vh;
+}
+
+#logo_with_name_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw !important;
+}
+
+#name_of_logo_container {
+    display: block;
+    list-style: none;
+    margin-left: 15px;
+}
+
+#name_of_logo_txt1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5ex;
+    color: #652606;
+}
+
+#name_of_logo_txt2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.25ex;
+    color: #0a0807;
+}
+
+#menu_button {
+    flex-direction: column;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+}
+
+#menu_button:focus {
+    color: transparent;
+}
+
+#menu_button.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-4px, 5px);
+}
+
+#menu_button.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+#menu_button.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-4px, -5px);
+}
+
+#menu_sheet {
+    transition: 0.4s;
+    display: flex;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: white;
+    z-index: 0;
+    width: 100%;
+    height: 0%;
+    background-image: url("../images/University-Vector-Art.png");
+    background-position-y: 40px;
+}
+
+#menu_sheet ul {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    font-size: 3em;
+    gap: 1ex;
+    opacity: 0;
+    top: 25%;
+    padding-left: 5%;
+}
+
+#menu_sheet.open ul {
+    transition: 0.8s;
+    opacity: 1;
+}
+
+#menu_sheet.open {
+    height: 100%;
+}
+
+#menu_sheet .menu_items_container:first-child .bi-arrow-right {
+    margin-left: 5%;
+}
+
+#header_content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 15vh;
+    width: 50%;
+}
+
+#header_content h1 {
+    margin-top: 0px;
+    animation: header_content_h1 0.5s ease forwards 0.75s;
+}
+
+#header_content h2 {
+    margin-top: 5%;
+    animation: header_content_h2 0.75s ease forwards 0.5s;
+}
+
+#header_content h1,
+#header_content h2 {
+    line-height: 1.25em;
+    margin-left: -5%;
+    opacity: 0;
+}
+
+#free_of_charge {
+    color: #003800;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 1.25em;
+    animation: fadeIn 0.4s ease-in forwards 2s;
+}
+
+#header_content h1,
+#header_content h2 {
+    color: #652606;
+}
+
+#header_button_container {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+
+#header_button_container a {
+    font-size: 1.25vi;
+}
+
+#view_course_button {
+    color: #003800;
+    border: 0.25ex solid #003800;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+    animation: fadeIn 0.4s ease-in forwards 1.75s;
+}
+
+#recommend_a_career_button {
+    animation: fadeIn 0.4s ease-in forwards 1.5s;
+}
+
+#recommend_a_career_button,
+#view_course_button,
+#free_of_charge {
+    opacity: 0;
+}
+
+#view_course_button:hover,
+#view_course_button:focus {
+    background-color: #003800 !important;
+    color: white !important;
+    opacity: 1 !important;
+}
+
+#slider_container {
+    position: relative;
+    width: 90%;
+    top: 70%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: linear-gradient(to top, #3fea2c, #31c47f);
+    box-shadow: 0 0 1vi rgba(49, 196, 127, 0.3);
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+
+#slider_container:hover {
+    box-shadow: 0 0 3vi rgba(63, 234, 44, 0.7);
+}
+
+#slider_container,
+#slider_container:hover {
+    transition: 0.5s;
+}
+
+#slider_controll_buttons_container {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+#prev_button,
+#next_button {
+    width: 15%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 2.5em;
+    opacity: 0.5;
+    pointer-events: all;
+    cursor: pointer;
+}
+
+#prev_button:hover,
+#next_button:hover {
+    opacity: 1;
+}
+
+#slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+#slider_buttons_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    gap: 1.75vw;
+}
+
+#slider_outline_button,
+#slider_outline_button:focus {
+    border: 0.25ex solid #652606;
+    color: #652606;
+}
+
+#slider_outline_button:hover {
+    background-color: #652606;
+}
+
+#slider_fill_button,
+#slider_fill_button:focus {
+    background-color: #003800;
+    border: 0.25ex solid #003800;
+}
+
+#slider_fill_button:hover {
+    background-color: #387000;
+    border: 0.25ex solid #387000;
+}
+
+#slider_indicators_container {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: end;
+}
+
+#recommend_button_container {
+    margin-top: 50px;
+}
+
+#recommend_button_container,
+#see_all_courses_container {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#career_path_section {
+    padding: 0px 5%;
+}
+
+#career_path_section a {
+    color: #003800;
+}
+
+#career_path_section .outline_button {
+    border: 0.25ex solid #003800;
+}
+
+#career_path_section .outline_button:hover,
+#career_path_section .outline_button:focus {
+    background-color: #003800 !important;
+}
+
+#our_teams_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FEF8F6;
+}
+
+#our_teams_section .subtitle {
+    text-align: center;
+}
+
+#our_teams_section ul {
+    color: #003800;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    opacity: 0.9;
+}
+
+footer,
+#our_teams_section,
+#featured_courses_section,
+#what_industry_says_section,
+#our_sponsors_section {
+    padding: 5%;
+}
+
+#courses_tile_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#featured_courses_section .outline_button {
+    color: #0a0807;
+    border: 0.25ex solid #0a0807;
+}
+
+#featured_courses_section .outline_button:hover,
+#featured_courses_section .outline_button:focus {
+    background-color: #0a0807 !important;
+}
+
+#what_industry_says_section {
+    text-align: center;
+    padding-top: 0px !important;
+}
+
+#what_industry_says_section h2,
+#our_sponsors_section h2 {
+    color: #0a0807;
+}
+
+#what_industry_says_section h4 {
+    color: #a24507;
+    margin-bottom: 0px;
+}
+
+#what_industry_says_section span {
+    margin-top: 0px;
+    color: #0a0807;
+    font-weight: bold;
+    font-size: 0.6em;
+}
+
+#what_industry_says_section p {
+    color: #0a0807;
+    font-style: italic;
+    font-size: 0.9em;
+    opacity: 0.9;
+    line-height: 5vh;
+}
+
+#what_industry_says_card_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+}
+
+#our_sponsors_section {
+    text-align: center;
+    background-color: #FEF8F6;
+}
+
+#our_sponsors_section img {
+    padding: 2%;
+}
+
+#uom_logo_footer {
+    width: 200px;
+}
+
+#footer_inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#footer_left {
+    width: 200px;
+}
+
+#footer_center {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#footer_center div {
+    width: 275px;
+}
+
+#footer_right {
+    width: 250px;
+}
+
+#footer_right span a i {
+    font-size: 1.25em;
+    margin-right: 5%;
+}
+
+#footer_bottom {
+    padding-top: 8%;
+    justify-content: space-between;
+}
+
+#footer_links_container{
+    width: 310px;
+}
+
+#footer_bottom,
+#footer_links_container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#footer_bottom a,
+#footer_copyright {
+    opacity: 0.6;
+    text-wrap: nowrap;
+}
+
+#footer_bottom a:hover {
+    opacity: 1;
+}
