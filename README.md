@@ -6,6 +6,10 @@ Welcome to the UoM Homepage Redesign project! This repository showcases a comple
 
 In this project, we aimed to bring a fresh and modern look to the open.uom.lk homepage while maintaining the core design elements that have stood the test of time. We have removed unnecessary elements and introduced new, improved designs to align with modern web design trends.
 
+## Screenshot
+
+![UoM Homepage Screenshot](URL_OF_YOUR_IMAGE)
+
 ## Features
 
 - Fully responsive design for mobile, tablet, and desktop screens.
