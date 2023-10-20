@@ -8,7 +8,7 @@ In this project, we aimed to bring a fresh and modern look to the open.uom.lk ho
 
 ## Screenshot
 
-![UoM Homepage Screenshot](URL_OF_YOUR_IMAGE)
+![UoM Homepage Screenshot](https://github.com/knoit-sky/uom-homepage-redesign/blob/main/Screenshot.jpeg)
 
 ## Features
 
